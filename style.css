@@ -4,5 +4,7 @@
 
 header {
     background-image: url("images/https://www.contentmanager.de/wp-content/uploads/Web2.0.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
