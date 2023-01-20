@@ -6,13 +6,30 @@ html {
 *::after {
     box-sizing: inherit;
 }
-
+/* Set Color Varibles */
+:root {
+    --background-color: hsl(73, 96%, 9%);
+    --lighter-background: hsl(73, 96%, 36%);
+    --text: hsl(73, 96%, 97%);
+    --primary: #0684a0;
+    --accent: #083640;
+    --other-accent: #403A05;
+    --link-hover: #025c80cc;
+}
+/* Style */
 body {
     font-size: 125%;
     margin: 0;
     padding: 0;
+    color: var(--text);
+    background-color: var(--background-color);
 }
-
+a:link, a:visited {
+    color: var(--primary);
+}
+a:hover {
+    color: var(--link-hover);
+}
 /* Style the banner */
 header {
     background-image: url("images/Importance-of-Web-2.0.jpg");
@@ -51,7 +68,7 @@ header section p {
     float: right;
     width: 350px;
     padding: 0.5em;
-    border: 2px solid #336699;
+    border: 2px solid var(--accent);
     margin: 0 0 0 1em;
 }
 
@@ -64,3 +81,7 @@ header section p {
 }
 
 /* style the footer */
+footer {
+    background-color: var(--lighter-background);
+    padding: 0.2em 0;
+}
