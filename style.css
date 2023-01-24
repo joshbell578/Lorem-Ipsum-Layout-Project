@@ -8,21 +8,29 @@ html {
 }
 /* Set Color Varibles */
 :root {
-    --background: hsl(73, 96%, 9%);
-    --lighter-background: hsl(73, 96%, 36%);
+    --background: hsl(245, 96%, 9%);
+    --lighter-background: hsl(246, 96%, 36%);
     --text: hsl(73, 96%, 97%);
-    --primary: #0684a0;
+    --primary: #13a006;
     --accent: #083640;
     --other-accent: #403A05;
-    --link-hover: #025c80cc;
+    --link-hover: #178002b2;
 }
 /* Style */
 body {
-    font-size: 135%;
+    font-size: 155%;
     margin: 0;
     padding: 0;
     color: var(--text);
     background-color: var(--background);
+    font-family: 'Ledger', serif;
+    line-height: 1.45;
+}
+h1, h2, h3 {
+    font-family: 'Nixie One', cursive;
+}
+p, li {
+    max-width: 70rem;
 }
 a:link, a:visited {
     color: var(--primary);
@@ -32,7 +40,7 @@ a:hover {
 }
 /* Style the banner */
 header {
-    background-image: url("images/Importance-of-Web-2.0.jpg");
+    background-image: url("images/Web2.0.webp");
     height: 100vh;
     min-height: 600px;
     max-height: 700px;
@@ -43,15 +51,20 @@ header {
 
 header section {
     padding: 1rem;
+    width: 40rem;
+    position: relative;
+    left: 2rem;
+    bottom: 2rem;
 }
 
 header section h1 {
-    color: #e0e0e0;
+    color: #ffffff;
     font-size: 2.2em;
+    margin-bottom: 0;
 } 
 
 header section p {
-    color: #d0d0d0;
+    color: #caadada1;
     font-size: 1.2em;
 }
 
