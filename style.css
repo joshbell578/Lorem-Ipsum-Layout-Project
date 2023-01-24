@@ -8,7 +8,7 @@ html {
 }
 /* Set Color Varibles */
 :root {
-    --background-color: hsl(73, 96%, 9%);
+    --background: hsl(73, 96%, 9%);
     --lighter-background: hsl(73, 96%, 36%);
     --text: hsl(73, 96%, 97%);
     --primary: #0684a0;
@@ -22,7 +22,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--text);
-    background-color: var(--background-color);
+    background-color: var(--background);
 }
 a:link, a:visited {
     color: var(--primary);
