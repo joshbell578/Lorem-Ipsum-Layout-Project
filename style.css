@@ -11,9 +11,9 @@ html {
     --background: hsl(245, 96%, 9%);
     --lighter-background: hsl(246, 96%, 36%);
     --text: hsl(73, 96%, 97%);
-    --primary: #13a006;
+    --primary: #108605;
     --accent: #083640;
-    --other-accent: #403A05;
+    --other-accent: #556607;
     --link-hover: #178002b2;
 }
 /* Style */
@@ -37,6 +37,9 @@ a:link, a:visited {
 }
 a:hover {
     color: var(--link-hover);
+}
+a:active, body a:focus {
+    color: var(--other-accent);
 }
 /* Style the banner */
 header {
@@ -75,6 +78,9 @@ header section p {
     margin: 0 auto;
 }
 
+h2.centered-main{
+    padding-top: 4rem;
+}
 /* Style floated boxes */
 .box-right {
     box-sizing: content-box;
@@ -82,7 +88,8 @@ header section p {
     width: 350px;
     padding: 0.5em;
     border: 2px solid var(--accent);
-    margin: 0 0 0 1em;
+    margin: 0 0 1em 1em;
+    border-radius: 4px;
 }
 
 .box-right img {
